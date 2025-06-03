@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abai Aqparat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-section {
+      margin: 50px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      border-radius: 12px;
+    }
+
+    .video-section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .video-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 450px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Abai Aqparat</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="about.html">Біз туралы</a></li>
+		  <li><a href="media.html">Медиагалерея</a></li>
+		  <li><a href="social.html">Әлеуметтік желілер</a></li>
+          <li><a href="contact.html">Байланыс</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Соңғы жаңалықтар</h2>
+    <div class="news-grid">
+      <div class="news-item">
+        <img src="img/news1.jpg" alt="Жаңалық 1">
+        <h3><a href="news1.html">Семейдегі аспалы көпірдің жөндеу жұмыстарына облыс әкімі арнайы барды</a></h3>
+        <p>30.05.2025 9:00</p>
+      </div>
+      <div class="news-item">
+        <img src="img/news2.jpg" alt="Жаңалық 2">
+        <h3><a href="news2.html">Семейде «Еңбекші жастар – 2025» фестивалі өтті</a></h3>
+        <p>31.05.2025 8:33</p>
+      </div>
+      <div class="news-item">
+        <img src="img/news3.jpg" alt="Жаңалық 3">
+        <h3><a href="news3.html">Мемлекет басшысы Миграция жөніндегі халықаралық ұйымның бас директоры Эми Поупты қабылдады</a></h3>
+        <p>30.05.2025 18:48</p>
+      </div>
+    </div>
+
+    <!-- 📌 Видеобөлім басталады -->
+    <div class="video-section">
+      <h2>Abai Aqparat туралы бейнематериал</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/v8C_qzLDYR0"
+                title="Abai Aqparat Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <!-- 📌 Видеобөлім аяқталады -->
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Abai Aqparat. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

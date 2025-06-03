@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Байланыс - Abai Aqparat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Abai Aqparat</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="about.html">Біз туралы</a></li>
+          <li><a href="media.html">Медиагалерея</a></li>
+		  <li><a href="social.html">Әлеуметтік желілер</a></li>
+          <li><a href="contact.html">Байланыс</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Байланыс</h2>
+    <p>Бізбен байланысу үшін төмендегі байланыс құралдарын пайдаланыңыз:</p>
+
+    <ul style="margin: 20px 0; line-height: 1.8;">
+      <li><strong>Мекенжай:</strong> Қазақстан, Абай облысы, Семей қаласы</li>
+      <li><strong>Телефон:</strong> +7 (7222) 123-456</li>
+      <li><strong>Email:</strong> info@abaiaqparat.kz</li>
+    </ul>
+
+    <h3>Хабарлама жіберу</h3>
+    <form>
+      <label>Атыңыз:</label><br>
+      <input type="text" placeholder="Атыңызды енгізіңіз" style="width:100%; padding:10px; margin:10px 0;"><br>
+      <label>Email:</label><br>
+      <input type="email" placeholder="Электронды пошта" style="width:100%; padding:10px; margin:10px 0;"><br>
+      <label>Хабарлама:</label><br>
+      <textarea rows="5" placeholder="Хабарламаңызды жазыңыз" style="width:100%; padding:10px; margin:10px 0;"></textarea><br>
+      <button type="submit" style="padding: 10px 20px; background: #00bcd4; color: white; border: none; cursor: pointer;">Жіберу</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Abai Aqparat. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
